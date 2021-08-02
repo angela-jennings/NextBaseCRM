@@ -22,7 +22,7 @@ public class loginFunctionalityStepDefinitions {
     }
     @Then("user should be logged into the application")
     public void user_should_be_logged_into_the_application() {
-
+        //would typically do a title verification here for the desired web page but there is no given title
     }
 
     @When("user checks the remember me box")
