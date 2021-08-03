@@ -1,4 +1,4 @@
 package com.nextBase.pages;
 
-public class CRM_DashBoardPage {
+public class CRM_DashBoardPage extends BasePage{
 }

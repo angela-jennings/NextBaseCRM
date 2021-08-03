@@ -1,4 +1,6 @@
 package com.nextBase.pages;
 
-public class PasswordResetPage {
+import org.bouncycastle.jcajce.provider.symmetric.ARC4;
+
+public class PasswordResetPage extends BasePage {
 }
