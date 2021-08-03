@@ -14,8 +14,8 @@ public class loginFunctionalityStepDefinitions {
     public void user_is_on_page() {
         Driver.getDriver().get(ConfigurationReader.getProperty("loginUrl"));
     }
-    @When("user enters {string} as username and user enters {string} as password")
-    public void user_enters_and_user_enters(String username, String password) {
+    @When("user enters {string} and user enters {string}")
+    public void userEntersAndUserEnters(String username, String password) {
         nextBaseLandingPage.usernameInputField.sendKeys(username);
         nextBaseLandingPage.passwordInputField.sendKeys(password);
         nextBaseLandingPage.signInButton.click();
@@ -24,7 +24,6 @@ public class loginFunctionalityStepDefinitions {
     public void user_should_be_logged_into_the_application() {
         //would typically do a title verification here for the desired web page but there is no given title
     }
-
     @When("user checks the remember me box")
     public void user_checks_the_remember_me_box() {
         nextBaseLandingPage.rememberMeCheckbox.click();
@@ -33,4 +32,5 @@ public class loginFunctionalityStepDefinitions {
     public void the_box_should_be_clicked() {
         nextBaseLandingPage.rememberMeCheckbox.isSelected();
     }
+
 }

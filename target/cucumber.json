@@ -3,15 +3,15 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-08-02T23:51:53.808Z",
-        "line": 4,
+        "start_timestamp": "2021-08-03T00:10:20.660Z",
+        "line": 10,
         "name": "Users can login with valid credentials",
         "description": "",
-        "id": "as-a-user--i-should-be-able-to-log-into-the-application;users-can-login-with-valid-credentials",
+        "id": "as-a-user--i-should-be-able-to-log-into-the-application;users-can-login-with-valid-credentials;login-functionality-for-different-users;2",
         "after": [
           {
             "result": {
-              "duration": 812000000,
+              "duration": 776000000,
               "status": "passed"
             },
             "match": {
@@ -20,11 +20,11 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3135000000,
+              "duration": 2429000000,
               "status": "passed"
             },
             "line": 5,
@@ -36,11 +36,11 @@
           },
           {
             "result": {
-              "duration": 4091000000,
+              "duration": 3584000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "user enters \"helpdesk3@cybertekschool.com\" as username and user enters \"UserUser\" as password",
+            "name": "user enters \"helpdesk3@cybertekschool.com\" and user enters \"UserUser\"",
             "match": {
               "arguments": [
                 {
@@ -49,10 +49,10 @@
                 },
                 {
                   "val": "\"UserUser\"",
-                  "offset": 71
+                  "offset": 59
                 }
               ],
-              "location": "com.nextBase.step_definitions.loginFunctionalityStepDefinitions.user_enters_and_user_enters(java.lang.String,java.lang.String)"
+              "location": "com.nextBase.step_definitions.loginFunctionalityStepDefinitions.userEntersAndUserEnters(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
@@ -75,15 +75,159 @@
         ]
       },
       {
-        "start_timestamp": "2021-08-02T23:52:01.900Z",
-        "line": 9,
+        "start_timestamp": "2021-08-03T00:10:27.505Z",
+        "line": 11,
+        "name": "Users can login with valid credentials",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-log-into-the-application;users-can-login-with-valid-credentials;login-functionality-for-different-users;3",
+        "after": [
+          {
+            "result": {
+              "duration": 806000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.nextBase.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1875000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on Next Base landing page",
+            "match": {
+              "location": "com.nextBase.step_definitions.loginFunctionalityStepDefinitions.user_is_on_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3074000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters \"marketing3@cybertekschool.com\" and user enters \"UserUser\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"marketing3@cybertekschool.com\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"UserUser\"",
+                  "offset": 60
+                }
+              ],
+              "location": "com.nextBase.step_definitions.loginFunctionalityStepDefinitions.userEntersAndUserEnters(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should be logged into the application",
+            "match": {
+              "location": "com.nextBase.step_definitions.loginFunctionalityStepDefinitions.user_should_be_logged_into_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-03T00:10:33.265Z",
+        "line": 12,
+        "name": "Users can login with valid credentials",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-log-into-the-application;users-can-login-with-valid-credentials;login-functionality-for-different-users;4",
+        "after": [
+          {
+            "result": {
+              "duration": 800000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.nextBase.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1728000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on Next Base landing page",
+            "match": {
+              "location": "com.nextBase.step_definitions.loginFunctionalityStepDefinitions.user_is_on_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4306000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters \"hr3@cybertekschool.com\" and user enters \"UserUser\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hr3@cybertekschool.com\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"UserUser\"",
+                  "offset": 53
+                }
+              ],
+              "location": "com.nextBase.step_definitions.loginFunctionalityStepDefinitions.userEntersAndUserEnters(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should be logged into the application",
+            "match": {
+              "location": "com.nextBase.step_definitions.loginFunctionalityStepDefinitions.user_should_be_logged_into_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-03T00:10:40.103Z",
+        "line": 14,
         "name": "Users can check the Remember Me box",
         "description": "",
         "id": "as-a-user--i-should-be-able-to-log-into-the-application;users-can-check-the-remember-me-box",
         "after": [
           {
             "result": {
-              "duration": 630000000,
+              "duration": 624000000,
               "status": "passed"
             },
             "match": {
@@ -96,10 +240,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1657000000,
+              "duration": 1850000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 15,
             "name": "user is on Next Base landing page",
             "match": {
               "location": "com.nextBase.step_definitions.loginFunctionalityStepDefinitions.user_is_on_page()"
@@ -108,10 +252,10 @@
           },
           {
             "result": {
-              "duration": 46000000,
+              "duration": 56000000,
               "status": "passed"
             },
-            "line": 11,
+            "line": 16,
             "name": "user checks the remember me box",
             "match": {
               "location": "com.nextBase.step_definitions.loginFunctionalityStepDefinitions.user_checks_the_remember_me_box()"
@@ -120,10 +264,10 @@
           },
           {
             "result": {
-              "duration": 15000000,
+              "duration": 17000000,
               "status": "passed"
             },
-            "line": 12,
+            "line": 17,
             "name": "the box should be clicked",
             "match": {
               "location": "com.nextBase.step_definitions.loginFunctionalityStepDefinitions.the_box_should_be_clicked()"
